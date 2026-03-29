@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>CLIMA</title>
+</head>
+
+<body>
+    <div id="container">
+
+      
+        <form id="pesquisa">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" id="cidadenome" placeholder="Buscar cidade">
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+     
+        <div id="corpo">
+
+            <h1 id="cidade">Cidade, BR</h1>
+
+       
+            <div id="info">
+                <div>
+                    <img id="img_icon" src="" alt="clima">
+                </div>
+
+                <div>
+                    <p id="temperatura">32</p>
+                    <p id="descricao">Ensolarado</p>
+                </div>
+            </div>
+
+           
+            <div id="other_info">
+
+                <div class="infos">
+                    <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
+                    <div>
+                        <h2">Temp. Máx</h2>
+                        <p id="temp_max" >32 <sup>°C</sup></p>
+                    </div>
+                </div>
+
+                <div class="infos">
+                    <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
+                    <div>
+                        <h2 id="temp_min">Temp. Mín</h2>
+                        <p id="temp_minvalue">16 <sup>°C</sup></p>
+                    </div>
+                </div>
+
+                <div class="infos">
+                    <i id="humidade_icon" class="fa-solid fa-droplet"></i>
+                    <div>
+                        <h2 id="humidade">Humidade</h2>
+                        <p id="humidade_value">50%</p>
+                    </div>
+                </div>
+
+                <div class="infos">
+                    <i id="vento_icon" class="fa-solid fa-wind"></i>
+                    <div>
+                        <h2 id="vento">Vento</h2>
+                        <p id="vento_value">100 km/h</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

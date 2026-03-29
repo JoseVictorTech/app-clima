@@ -8,7 +8,7 @@ document.querySelector("#pesquisa").addEventListener('submit' , async (event) =>
         alert('voce precisa digitar um cidade')
         return
     }
-    let apikey = "adc96fb412ad5c3ec66375678e479b3c";
+    let apikey = "810a654c1ca9fb6046d1c1c6add0d016";
     let Api_url =`https://api.openweathermap.org/data/2.5/weather?q=${ encodeURI(cityname)}&appid=${apikey}&units=metric&lang=pt_br`
 
     let resposta = await fetch (Api_url)
